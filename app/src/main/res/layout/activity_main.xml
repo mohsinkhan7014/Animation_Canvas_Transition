@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANIMATION WORLD"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/im1"
+        android:background="@drawable/emojee_list"
+        android:layout_marginLeft="50dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZOOM in"
+        android:id="@+id/zoomin"
+        android:layout_below="@+id/im1"
+        android:layout_marginTop="30dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZOOM out"
+        android:id="@+id/zoomout"
+        android:layout_toRightOf="@+id/zoomin"
+        android:layout_below="@+id/im1"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate"
+        android:id="@+id/rotate"
+        android:layout_toRightOf="@+id/zoomout"
+        android:layout_below="@+id/im1"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startanim"
+        android:id="@+id/next"
+        android:layout_toRightOf="@+id/rotate"
+        android:layout_below="@+id/im1"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo"
+        android:id="@+id/combo"
+        android:layout_toRightOf="@+id/zoomout"
+        android:layout_below="@+id/zoomout"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transition"
+        android:id="@+id/transition"
+        android:layout_below="@+id/zoomout"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+</RelativeLayout>
